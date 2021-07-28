@@ -59,6 +59,7 @@ export const restart = function () {
   state.numsVisible = true;
   state.seconds = 2;
   state.lives = 3;
+  state.score = 0;
 };
 
 const updateScore = function () {
