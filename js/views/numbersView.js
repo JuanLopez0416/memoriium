@@ -1,6 +1,6 @@
 import View from './view.js';
 // import heartsIcon from 'url:../../heart.png';
-const heartsIcon = '../../heart.png';
+const heartsIcon = 'heart.edc7a148.png';
 
 class NumbersView extends View {
   parentElement = document.querySelector(`.card-container`);
