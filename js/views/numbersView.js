@@ -1,4 +1,6 @@
 import View from './view.js';
+// import heartsIcon from 'url:../../heart.png';
+const heartsIcon = '../../heart.png';
 
 class NumbersView extends View {
   parentElement = document.querySelector(`.card-container`);
@@ -46,7 +48,7 @@ class NumbersView extends View {
     let html = '';
     for (let i = 1; i <= this.data.lives; i++) {
       html += `
-      <img src="./heart.png" alt="heart" />`;
+      <img src="${heartsIcon}" alt="heart" />`;
     }
     hearts.insertAdjacentHTML('beforeend', html);
   }
