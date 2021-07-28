@@ -46,6 +46,8 @@ const controllerNums = function (numElm) {
     numbersView.initMain();
     ModalView.nextMessage();
     ModalView.toggleModal();
+    model.addScore();
+    console.log(model.state.highscore);
     numbersView.renderScore(model.state.highscore);
   }
 };

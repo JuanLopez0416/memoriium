@@ -41,7 +41,6 @@ export const newRound = function () {
   // Add 1 number
   state.totalNumbers++;
   state.seconds++;
-  state.score++;
   if (state.score > state.highscore) {
     state.highscore = state.score;
     updateScore();
@@ -69,6 +68,10 @@ const updateScore = function () {
 const getScore = function () {
   const data = JSON.parse(localStorage.getItem('highscore'));
   if (data) state.highscore = data;
+};
+
+export const addScore = function () {
+  state.score++;
 };
 
 getScore();
